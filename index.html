@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Variables</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        //Setting variable values
+        var finalPrice = 0.0;
+        var retailPrice = prompt("What is the price before tax?");
+        var taxRate = prompt("What is the tax rate?");
+
+        retailPrice = parseFloat(retailPrice);
+        taxRate = parseFloat(taxRate);
+
+        var finalPrice = retailPrice + (retailPrice * taxRate);
+        alert("Your total is $" + finalPrice);
+    </script>
+</head>
+
+<body>
+    <h1>Done!</h1>
+
+</body>
+
+</html>
